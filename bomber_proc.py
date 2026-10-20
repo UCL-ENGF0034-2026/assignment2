@@ -214,6 +214,7 @@ def create_buildings(canvas, building_width, building_heights, building_xpos, bu
     if len(building_rects) > 0:
         for building_num in range(0, 1200//SPACING):
             delete_building(canvas, building_num, building_rects)
+    building_rects.clear()
     building_heights.clear()
     building_xpos.clear()
 
